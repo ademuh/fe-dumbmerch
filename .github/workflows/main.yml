@@ -2,13 +2,13 @@ name: remote ssh command
 on: [push]
 
 jobs:
-  default:
-    name: checkout
+  build:
+    name: build & run docker
     runs-on: ubuntu-latest
     steps:
-    - name: checkout
-      uses: actions/checkout@v3
-
+    
+    - uses: actions/checkout@v3
+    
     - name: docker shit
       uses: ./
       with:
