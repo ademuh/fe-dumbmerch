@@ -3,6 +3,7 @@ on: [push]
 
 jobs:
   build:
+    environment: "test"
     name: build & run docker
     runs-on: ubuntu-latest
     steps:
