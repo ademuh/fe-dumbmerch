@@ -10,6 +10,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: docker shit
+      uses: ./
       with:
         host: 103.175.219.128
         username: aimingds
